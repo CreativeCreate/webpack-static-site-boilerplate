@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# HTML ELEMENTS
+--------------------------------------------------------------*/
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+html,
+body {
+	background: $color__white; /* Fallback for when there is no custom background color defined. */
+	font-family: $font__main;
+	color: $color__black;
+	font-size: 16px;
+}
+	
+a {
+	color: $color__link;
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+
+	}
+	&:hover,
+	&:active {
+
+	}
+}
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
